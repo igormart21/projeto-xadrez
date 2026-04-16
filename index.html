@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Loja En Passant - referência nacional em produtos de xadrez premium.">
+  <title>Loja En Passant | Xadrez Premium</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css?v=20260416">
+</head>
+<body>
+  <div class="bg-grid" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <nav class="navbar navbar-expand-lg container py-1">
+      <a class="navbar-brand brand-title brand-logo-link" href="./index.html" aria-label="Loja En Passant">
+        <img class="brand-logo" src="./assets/ChatGPT%20Image%20Apr%2015,%202026,%2001_05_10%20PM.png" alt="Logo En Passant">
+      </a>
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav ms-auto gap-lg-4 mt-3 mt-lg-0">
+          <li class="nav-item"><a class="nav-link active" href="./index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="./sobre.html">Sobre</a></li>
+          <li class="nav-item"><a class="nav-link" href="./produtos.html">Produtos</a></li>
+          <li class="nav-item"><a class="nav-link" href="./experiencia.html">Diferenciais</a></li>
+          <li class="nav-item"><a class="nav-link" href="./contato.html">Contato</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero-section hero-canvas-wrap">
+      <div class="hero-image-layer" aria-hidden="true"></div>
+      <canvas id="hero-particles-canvas" class="hero-canvas" aria-hidden="true"></canvas>
+      <div class="container hero-content text-center reveal">
+        <h1 class="hero-title mt-3">O xadrez elevado a outro nível.</h1>
+        <p class="hero-subtitle mt-3 mx-auto">
+          Produtos selecionados para quem leva o jogo a sério. Exclusividade, estratégia, inteligência e sofisticação.
+        </p>
+        <div class="d-flex flex-wrap gap-3 mt-4 justify-content-center">
+          <a href="./produtos.html" class="btn btn-primary-custom">Explorar produtos</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-spacing pt-0 home-signature-section">
+      <div class="container">
+        <div class="section-header reveal text-center">
+          <span class="section-kicker">Assinatura da marca</span>
+          <h2>Excelência para quem escolhe jogar com presença</h2>
+        </div>
+        <div class="row g-4 mt-3">
+          <div class="col-6 col-lg-3 reveal">
+            <div class="stat-card">
+              <h3>+3.500</h3>
+              <p>Clientes atendidos com excelência em produtos de xadrez</p>
+            </div>
+          </div>
+          <div class="col-6 col-lg-3 reveal">
+            <div class="stat-card">
+              <h3>5/5</h3>
+              <p>Avaliação média em experiência de compra</p>
+            </div>
+          </div>
+          <div class="col-6 col-lg-3 reveal">
+            <div class="stat-card">
+              <h3>100%</h3>
+              <p>Curadoria focada em produtos de alto padrão</p>
+            </div>
+          </div>
+          <div class="col-6 col-lg-3 reveal">
+            <div class="stat-card">
+              <h3>Brasil</h3>
+              <p>Envio nacional com acompanhamento direto</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-spacing section-soft">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-kicker">Jornada da marca</span>
+          <h2>Conheça cada frente da Loja En Passant</h2>
+        </div>
+        <div class="row g-4 mt-2">
+          <div class="col-md-6 col-xl-3 reveal">
+            <a class="institutional-card" href="./sobre.html">
+              <h3>Sobre a Marca</h3>
+              <p>História, significado de En Passant e posicionamento da marca.</p>
+              <span>Ver página</span>
+            </a>
+          </div>
+          <div class="col-md-6 col-xl-3 reveal">
+            <a class="institutional-card" href="./produtos.html">
+              <h3>Produtos</h3>
+              <p>Catálogo premium por categorias, com CTA direto por WhatsApp.</p>
+              <span>Ver página</span>
+            </a>
+          </div>
+          <div class="col-md-6 col-xl-3 reveal">
+            <a class="institutional-card" href="./experiencia.html">
+              <h3>Diferenciais</h3>
+              <p>Curadoria, experiência de marca e narrativa de estilo de vida.</p>
+              <span>Ver página</span>
+            </a>
+          </div>
+          <div class="col-md-6 col-xl-3 reveal">
+            <a class="institutional-card" href="./contato.html">
+              <h3>Contato</h3>
+              <p>Canal direto para compra, suporte e relacionamento com clientes.</p>
+              <span>Ver página</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-spacing">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-kicker">Seleção premium</span>
+          <h2>Coleções que unem estratégia, design e presença</h2>
+        </div>
+        <div class="row g-4 mt-2">
+          <div class="col-md-6 col-xl-4 reveal">
+            <article class="collection-card collection-1">
+              <div class="collection-overlay">
+                <h3>Jogo de xadrez</h3>
+                <p>Conjuntos completos com peças e tabuleiro para quem busca praticidade e elegância.</p>
+                <a href="./produtos.html">Ver coleção</a>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-6 col-xl-4 reveal">
+            <article class="collection-card collection-2">
+              <div class="collection-overlay">
+                <h3>Peças</h3>
+                <p>Peças com acabamento refinado, peso equilibrado e presença visual de alto padrão.</p>
+                <a href="./produtos.html">Ver coleção</a>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-6 col-xl-4 reveal">
+            <article class="collection-card collection-3">
+              <div class="collection-overlay">
+                <h3>Tabuleiro</h3>
+                <p>Tabuleiros com materiais nobres e design sóbrio para partidas em ambientes elegantes.</p>
+                <a href="./produtos.html">Ver coleção</a>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-6 col-xl-4 reveal">
+            <article class="collection-card collection-4">
+              <div class="collection-overlay">
+                <h3>Relógio</h3>
+                <p>Relógios de xadrez para treino técnico, controle de tempo e desempenho competitivo.</p>
+                <a href="./produtos.html">Ver coleção</a>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-6 col-xl-4 reveal">
+            <article class="collection-card collection-5">
+              <div class="collection-overlay">
+                <h3>Mesas</h3>
+                <p>Mesas e composições para transformar o xadrez em um elemento de estilo no ambiente.</p>
+                <a href="./produtos.html">Ver coleção</a>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-6 col-xl-4 reveal">
+            <article class="collection-card collection-6">
+              <div class="collection-overlay">
+                <h3>Livros</h3>
+                <p>Livros selecionados para evolução estratégica, tática e repertório de abertura.</p>
+                <a href="./produtos.html">Ver coleção</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-spacing section-soft">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-kicker">Processo de compra</span>
+          <h2>Como funciona sua experiência de compra</h2>
+        </div>
+        <div class="row g-4 mt-2">
+          <div class="col-md-4 reveal">
+            <div class="process-card">
+              <span>01</span>
+              <h3>Escolha seu produto</h3>
+              <p>Selecione a categoria ideal e receba opções disponíveis no WhatsApp.</p>
+            </div>
+          </div>
+          <div class="col-md-4 reveal">
+            <div class="process-card">
+              <span>02</span>
+              <h3>Atendimento rápido</h3>
+              <p>Enviamos detalhes, fotos e valores para facilitar sua decisão de compra.</p>
+            </div>
+          </div>
+          <div class="col-md-4 reveal">
+            <div class="process-card">
+              <span>03</span>
+              <h3>Fechamento e envio</h3>
+              <p>Finalize seu pedido com segurança e receba em qualquer região do Brasil.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-spacing section-soft testimonials-section">
+      <div class="container">
+        <div class="section-header reveal text-center">
+          <span class="section-kicker">Depoimentos de clientes</span>
+          <h2>O que nossos clientes dizem sobre a loja</h2>
+          <p class="testimonials-subtitle">
+            Experiências reais de quem já comprou artigos premium de xadrez com a Loja En Passant.
+          </p>
+        </div>
+
+        <div class="testimonials-mask mt-4">
+          <div class="testimonials-columns">
+            <div class="testimonials-column testimonials-col-1">
+              <article class="testimonial-card">
+                <p>"Atendimento excelente e peças com acabamento impecável. Superou minhas expectativas."</p>
+                <div class="testimonial-author">
+                  <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Carlos Menezes">
+                  <div>
+                    <strong>Carlos Menezes</strong>
+                    <span>Jogador amador</span>
+                  </div>
+                </div>
+              </article>
+              <article class="testimonial-card">
+                <p>"O tabuleiro chegou muito bem embalado e com qualidade premium. Compra segura."</p>
+                <div class="testimonial-author">
+                  <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Renata Souza">
+                  <div>
+                    <strong>Renata Souza</strong>
+                    <span>Colecionadora</span>
+                  </div>
+                </div>
+              </article>
+              <article class="testimonial-card">
+                <p>"Comprei relógio e livros. Produto original, entrega rápida e ótimo suporte."</p>
+                <div class="testimonial-author">
+                  <img src="https://randomuser.me/api/portraits/men/52.jpg" alt="Marcelo Lima">
+                  <div>
+                    <strong>Marcelo Lima</strong>
+                    <span>Professor de xadrez</span>
+                  </div>
+                </div>
+              </article>
+              <article class="testimonial-card" aria-hidden="true">
+                <p>"Atendimento excelente e peças com acabamento impecável. Superou minhas expectativas."</p>
+                <div class="testimonial-author">
+                  <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Carlos Menezes">
+                  <div>
+                    <strong>Carlos Menezes</strong>
+                    <span>Jogador amador</span>
+                  </div>
+                </div>
+              </article>
+              <article class="testimonial-card" aria-hidden="true">
+                <p>"O tabuleiro chegou muito bem embalado e com qualidade premium. Compra segura."</p>
+                <div class="testimonial-author">
+                  <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Renata Souza">
+                  <div>
+                    <strong>Renata Souza</strong>
+                    <span>Colecionadora</span>
+                  </div>
+                </div>
+              </article>
+              <article class="testimonial-card" aria-hidden="true">
+                <p>"Comprei relógio e livros. Produto original, entrega rápida e ótimo suporte."</p>
+                <div class="testimonial-author">
+                  <img src="https://randomuser.me/api/portraits/men/52.jpg" alt="Marcelo Lima">
+                  <div>
+                    <strong>Marcelo Lima</strong>
+                    <span>Professor de xadrez</span>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            <div class="testimonials-column testimonials-col-2">
+              <article class="testimonial-card">
+                <p>"A mesa de xadrez deixou meu escritório muito mais elegante. Produto lindo."</p>
+                <div class="testimonial-author">
+                  <img src="https://randomuser.me/api/portraits/women/28.jpg" alt="Fernanda Costa">
+                  <div>
+                    <strong>Fernanda Costa</strong>
+                    <span>Arquiteta</span>
+                  </div>
+                </div>
+              </article>
+              <article class="testimonial-card">
+                <p>"Gostei muito da curadoria de produtos. Tudo com padrão alto e ótimo custo-benefício."</p>
+                <div class="testimonial-author">
+                  <img src="https://randomuser.me/api/portraits/men/68.jpg" alt="André Carvalho">
+                  <div>
+                    <strong>André Carvalho</strong>
+                    <span>Empresário</span>
+                  </div>
+                </div>
+              </article>
+              <article class="testimonial-card">
+                <p>"A experiência de compra foi clara e rápida. Recomendo para quem busca qualidade."</p>
+                <div class="testimonial-author">
+                  <img src="https://randomuser.me/api/portraits/women/61.jpg" alt="Juliana Prado">
+                  <div>
+                    <strong>Juliana Prado</strong>
+                    <span>Cliente recorrente</span>
+                  </div>
+                </div>
+              </article>
+              <article class="testimonial-card" aria-hidden="true">
+                <p>"A mesa de xadrez deixou meu escritório muito mais elegante. Produto lindo."</p>
+                <div class="testimonial-author">
+                  <img src="https://randomuser.me/api/portraits/women/28.jpg" alt="Fernanda Costa">
+                  <div>
+                    <strong>Fernanda Costa</strong>
+                    <span>Arquiteta</span>
+                  </div>
+                </div>
+              </article>
+              <article class="testimonial-card" aria-hidden="true">
+                <p>"Gostei muito da curadoria de produtos. Tudo com padrão alto e ótimo custo-benefício."</p>
+                <div class="testimonial-author">
+                  <img src="https://randomuser.me/api/portraits/men/68.jpg" alt="André Carvalho">
+                  <div>
+                    <strong>André Carvalho</strong>
+                    <span>Empresário</span>
+                  </div>
+                </div>
+              </article>
+              <article class="testimonial-card" aria-hidden="true">
+                <p>"A experiência de compra foi clara e rápida. Recomendo para quem busca qualidade."</p>
+                <div class="testimonial-author">
+                  <img src="https://randomuser.me/api/portraits/women/61.jpg" alt="Juliana Prado">
+                  <div>
+                    <strong>Juliana Prado</strong>
+                    <span>Cliente recorrente</span>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            <div class="testimonials-column testimonials-col-3">
+              <article class="testimonial-card">
+                <p>"Peças pesadas e muito bem acabadas. O jogo ficou incrível no ambiente da minha sala."</p>
+                <div class="testimonial-author">
+                  <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="Paulo Nogueira">
+                  <div>
+                    <strong>Paulo Nogueira</strong>
+                    <span>Cliente premium</span>
+                  </div>
+                </div>
+              </article>
+              <article class="testimonial-card">
+                <p>"Excelente variedade de produtos. Encontrei exatamente o modelo que procurava."</p>
+                <div class="testimonial-author">
+                  <img src="https://randomuser.me/api/portraits/women/19.jpg" alt="Vanessa Almeida">
+                  <div>
+                    <strong>Vanessa Almeida</strong>
+                    <span>Jogadora iniciante</span>
+                  </div>
+                </div>
+              </article>
+              <article class="testimonial-card">
+                <p>"Gostei muito do suporte pós-compra e da atenção no envio. Loja altamente confiável."</p>
+                <div class="testimonial-author">
+                  <img src="https://randomuser.me/api/portraits/men/21.jpg" alt="Rafael Dias">
+                  <div>
+                    <strong>Rafael Dias</strong>
+                    <span>Cliente da loja</span>
+                  </div>
+                </div>
+              </article>
+              <article class="testimonial-card" aria-hidden="true">
+                <p>"Peças pesadas e muito bem acabadas. O jogo ficou incrível no ambiente da minha sala."</p>
+                <div class="testimonial-author">
+                  <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="Paulo Nogueira">
+                  <div>
+                    <strong>Paulo Nogueira</strong>
+                    <span>Cliente premium</span>
+                  </div>
+                </div>
+              </article>
+              <article class="testimonial-card" aria-hidden="true">
+                <p>"Excelente variedade de produtos. Encontrei exatamente o modelo que procurava."</p>
+                <div class="testimonial-author">
+                  <img src="https://randomuser.me/api/portraits/women/19.jpg" alt="Vanessa Almeida">
+                  <div>
+                    <strong>Vanessa Almeida</strong>
+                    <span>Jogadora iniciante</span>
+                  </div>
+                </div>
+              </article>
+              <article class="testimonial-card" aria-hidden="true">
+                <p>"Gostei muito do suporte pós-compra e da atenção no envio. Loja altamente confiável."</p>
+                <div class="testimonial-author">
+                  <img src="https://randomuser.me/api/portraits/men/21.jpg" alt="Rafael Dias">
+                  <div>
+                    <strong>Rafael Dias</strong>
+                    <span>Cliente da loja</span>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-spacing">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-kicker">Perguntas frequentes</span>
+          <h2>Respostas claras para sua decisão de compra</h2>
+        </div>
+        <div class="faq-box reveal mt-4">
+          <details open>
+            <summary>Vocês atendem iniciantes e jogadores avançados?</summary>
+            <p>Sim. Temos opções para iniciantes, intermediários e jogadores avançados.</p>
+          </details>
+          <details>
+            <summary>Como funciona a escolha dos produtos?</summary>
+            <p>Realizamos curadoria baseada em objetivo de uso, acabamento desejado e orçamento.</p>
+          </details>
+          <details>
+            <summary>Fazem envio para todo o Brasil?</summary>
+            <p>Sim. Organizamos envio nacional com orientação e acompanhamento da entrega.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-spacing pt-0">
+      <div class="container">
+        <div class="contact-box reveal">
+          <h2>Pronto para comprar seus artigos de xadrez?</h2>
+          <p>Fale com a equipe da Loja En Passant e receba atendimento rápido para concluir seu pedido.</p>
+          <div class="d-flex flex-wrap gap-3 justify-content-center mt-4">
+            <a class="btn btn-primary-custom wpp-link" href="https://wa.me/5511912424421?text=Ola,%20vim%20pelo%20site%20e%20quero%20montar%20uma%20selecao%20premium%20de%20xadrez" target="_blank" rel="noopener noreferrer">
+              Comprar pelo WhatsApp
+            </a>
+            <a class="btn btn-outline-custom" href="./produtos.html">Ver catálogo completo</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container py-5">
+      <div class="row g-4 align-items-center">
+        <div class="col-lg-4">
+          <img class="footer-logo mb-2" src="./assets/ChatGPT%20Image%20Apr%2015,%202026,%2001_05_10%20PM.png" alt="Logo En Passant">
+          <p class="mb-1 footer-text">Referência nacional em produtos de xadrez premium.</p>
+          <p class="mb-0 footer-mini">Artigos selecionados para quem leva o jogo a sério.</p>
+        </div>
+        <div class="col-lg-4">
+          <p class="footer-title mb-2">Navegação</p>
+          <ul class="footer-links">
+            <li><a href="./sobre.html">Sobre</a></li>
+            <li><a href="./produtos.html">Produtos</a></li>
+            <li><a href="./experiencia.html">Diferenciais</a></li>
+            <li><a href="./contato.html">Contato</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-4 text-lg-end">
+          <p class="footer-title footer-title-right mb-2">Siga a En Passant</p>
+          <div class="social-links-wrap">
+            <a class="social-link wpp-link" target="_blank" rel="noopener noreferrer" href="https://wa.me/5511912424421">WhatsApp</a>
+            <a class="social-link social-instagram" href="#" aria-label="Instagram">Instagram</a>
+            <a class="social-link social-facebook" href="#" aria-label="Facebook">Facebook</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-credit">
+        Produzida com <span class="footer-heart">♥</span> por <a href="https://camaly.com.br/" target="_blank" rel="noopener noreferrer">CAMALY</a>
+      </div>
+    </div>
+  </footer>
+
+  <a class="floating-whatsapp wpp-link" target="_blank" rel="noopener noreferrer" aria-label="Falar no WhatsApp" href="https://wa.me/5511912424421?text=Ola,%20vim%20pelo%20site%20e%20quero%20mais%20informacoes%20sobre%20os%20produtos%20de%20xadrez">
+    WhatsApp
+  </a>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./script.js"></script>
+</body>
+</html>
