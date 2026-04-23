@@ -96,6 +96,40 @@ body {
   transform-origin: left center;
 }
 
+/* Slogan oficial — barra sob o menu e rodapé */
+.site-slogan-bar-wrap {
+  text-align: center;
+  background: linear-gradient(90deg, transparent, rgba(124, 92, 252, 0.12), transparent);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  padding: 0.32rem 1rem 0.4rem;
+}
+
+.site-slogan-bar {
+  font-size: 0.78rem;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: rgba(215, 206, 255, 0.88);
+  margin: 0;
+  padding: 0;
+}
+
+.site-slogan-bar strong {
+  font-weight: 600;
+  color: #f0eaff;
+  letter-spacing: 0.04em;
+}
+
+.site-slogan-trust {
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.11em;
+  text-transform: uppercase;
+  color: rgba(255, 193, 168, 0.95);
+  margin: 0.22rem 0 0;
+  padding: 0;
+}
+
 .footer-logo {
   width: 210px;
   max-width: 100%;
@@ -227,8 +261,10 @@ body {
   font-family: Poppins, sans-serif;
   font-size: clamp(2.2rem, 6vw, 4.4rem);
   line-height: 1.08;
-  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
   max-width: 14ch;
+  text-align: center;
   text-wrap: balance;
   text-shadow: 0 8px 26px rgba(0, 0, 0, 0.5);
 }
@@ -369,6 +405,7 @@ body {
 }
 
 .product-card {
+  position: relative;
   height: 100%;
   border-radius: 16px;
   overflow: hidden;
@@ -432,9 +469,346 @@ body {
   font-size: 1.2rem;
 }
 
+.card-link-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 3;
+}
+
 .product-body p {
   color: var(--text-secondary);
   margin-top: 0.55rem;
+}
+
+.category-product-tag {
+  display: inline-flex;
+  padding: 0.32rem 0.68rem;
+  border-radius: 999px;
+  font-size: 0.72rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #f5ddc6;
+  background: rgba(255, 140, 43, 0.16);
+  border: 1px solid rgba(255, 140, 43, 0.28);
+}
+
+.category-product-card .product-body {
+  padding: 1.1rem;
+}
+
+.category-product-card .product-body h3 {
+  font-size: 1.12rem;
+  margin: 0.15rem 0 0;
+}
+
+.category-product-card .product-body p {
+  font-size: 0.95rem;
+}
+
+.category-product-image-link {
+  display: block;
+}
+
+.category-product-title-link {
+  color: var(--text-primary);
+  text-decoration: none;
+}
+
+.category-product-title-link:hover {
+  color: #f5ddc6;
+}
+
+.tabuleiro-mdf-image {
+  background-image:
+    linear-gradient(145deg, rgba(12, 9, 20, 0.2), rgba(12, 9, 20, 0.72)),
+    url("https://images.unsplash.com/photo-1580541832626-2a7131ee809f?auto=format&fit=crop&w=1200&q=80");
+}
+
+.tabuleiro-standard-image {
+  background-image:
+    linear-gradient(145deg, rgba(12, 9, 20, 0.2), rgba(12, 9, 20, 0.72)),
+    url("https://images.unsplash.com/photo-1528819622765-d6bcf132f793?auto=format&fit=crop&w=1200&q=80");
+}
+
+.tabuleiro-marchetado-image {
+  background-image:
+    linear-gradient(145deg, rgba(12, 9, 20, 0.2), rgba(12, 9, 20, 0.72)),
+    url("https://images.unsplash.com/photo-1611195974226-a6a9be9dd763?auto=format&fit=crop&w=1200&q=80");
+}
+
+.tabuleiro-marchetado-pvc-image {
+  background-image:
+    linear-gradient(145deg, rgba(12, 9, 20, 0.2), rgba(12, 9, 20, 0.72)),
+    url("https://images.unsplash.com/photo-1611195974226-a6a9be9dd763?auto=format&fit=crop&w=1200&q=80");
+}
+
+.tabuleiro-mousepad-image {
+  background-image:
+    linear-gradient(145deg, rgba(12, 9, 20, 0.2), rgba(12, 9, 20, 0.72)),
+    url("https://images.unsplash.com/photo-1528819622765-d6bcf132f793?auto=format&fit=crop&w=1200&q=80");
+}
+
+.tabuleiro-curvim-image {
+  background-image:
+    linear-gradient(145deg, rgba(12, 9, 20, 0.2), rgba(12, 9, 20, 0.72)),
+    url("https://images.unsplash.com/photo-1580541832626-2a7131ee809f?auto=format&fit=crop&w=1200&q=80");
+}
+
+.relogio-chessclock-image {
+  background-image:
+    linear-gradient(145deg, rgba(12, 9, 20, 0.2), rgba(12, 9, 20, 0.72)),
+    url("https://images.unsplash.com/photo-1528819622765-d6bcf132f793?auto=format&fit=crop&w=1200&q=80");
+}
+
+.relogio-leap-image {
+  background-image:
+    linear-gradient(145deg, rgba(12, 9, 20, 0.2), rgba(12, 9, 20, 0.72)),
+    url("https://images.unsplash.com/photo-1580541832626-2a7131ee809f?auto=format&fit=crop&w=1200&q=80");
+}
+
+.relogio-dgt-3000-image {
+  background-image:
+    linear-gradient(145deg, rgba(12, 9, 20, 0.2), rgba(12, 9, 20, 0.72)),
+    url("https://images.unsplash.com/photo-1611195974226-a6a9be9dd763?auto=format&fit=crop&w=1200&q=80");
+}
+
+.relogio-dgt-2010-image {
+  background-image:
+    linear-gradient(145deg, rgba(12, 9, 20, 0.2), rgba(12, 9, 20, 0.72)),
+    url("https://images.unsplash.com/photo-1528819622765-d6bcf132f793?auto=format&fit=crop&w=1200&q=80");
+}
+
+.peca-zagreb-preto-branco-image {
+  background-image:
+    linear-gradient(145deg, rgba(12, 9, 20, 0.2), rgba(12, 9, 20, 0.72)),
+    url("https://images.unsplash.com/photo-1528819622765-d6bcf132f793?auto=format&fit=crop&w=1200&q=80");
+}
+
+.peca-zagreb-madeira-image {
+  background-image:
+    linear-gradient(145deg, rgba(12, 9, 20, 0.2), rgba(12, 9, 20, 0.72)),
+    url("https://images.unsplash.com/photo-1611195974226-a6a9be9dd763?auto=format&fit=crop&w=1200&q=80");
+}
+
+.peca-german-image {
+  background-image:
+    linear-gradient(145deg, rgba(12, 9, 20, 0.2), rgba(12, 9, 20, 0.72)),
+    url("https://images.unsplash.com/photo-1580541832626-2a7131ee809f?auto=format&fit=crop&w=1200&q=80");
+}
+
+.peca-fischer-image {
+  background-image:
+    linear-gradient(145deg, rgba(12, 9, 20, 0.2), rgba(12, 9, 20, 0.72)),
+    url("https://images.unsplash.com/photo-1611195974226-a6a9be9dd763?auto=format&fit=crop&w=1200&q=80");
+}
+
+.peca-jaehring-image {
+  background-image:
+    linear-gradient(145deg, rgba(12, 9, 20, 0.2), rgba(12, 9, 20, 0.72)),
+    url("https://images.unsplash.com/photo-1611195974226-a6a9be9dd763?auto=format&fit=crop&w=1200&q=80");
+}
+
+.peca-escolar-image {
+  background-image:
+    linear-gradient(145deg, rgba(12, 9, 20, 0.2), rgba(12, 9, 20, 0.72)),
+    url("https://images.unsplash.com/photo-1580541832626-2a7131ee809f?auto=format&fit=crop&w=1200&q=80");
+}
+
+.peca-madeira-german-image {
+  background-image:
+    linear-gradient(145deg, rgba(12, 9, 20, 0.2), rgba(12, 9, 20, 0.72)),
+    url("https://images.unsplash.com/photo-1580541832626-2a7131ee809f?auto=format&fit=crop&w=1200&q=80");
+}
+
+.peca-sinquifield-2014-image {
+  background-image:
+    linear-gradient(145deg, rgba(12, 9, 20, 0.2), rgba(12, 9, 20, 0.72)),
+    url("https://images.unsplash.com/photo-1611195974226-a6a9be9dd763?auto=format&fit=crop&w=1200&q=80");
+}
+
+.peca-sinquifield-2019-image {
+  background-image:
+    linear-gradient(145deg, rgba(12, 9, 20, 0.2), rgba(12, 9, 20, 0.72)),
+    url("https://images.unsplash.com/photo-1611195974226-a6a9be9dd763?auto=format&fit=crop&w=1200&q=80");
+}
+
+.peca-madeira-zagreb-image {
+  background-image:
+    linear-gradient(145deg, rgba(12, 9, 20, 0.2), rgba(12, 9, 20, 0.72)),
+    url("https://images.unsplash.com/photo-1611195974226-a6a9be9dd763?auto=format&fit=crop&w=1200&q=80");
+}
+
+.peca-madeira-fide-image {
+  background-image:
+    linear-gradient(145deg, rgba(12, 9, 20, 0.2), rgba(12, 9, 20, 0.72)),
+    url("https://images.unsplash.com/photo-1528819622765-d6bcf132f793?auto=format&fit=crop&w=1200&q=80");
+}
+
+.peca-fischer-spassky-image {
+  background-image:
+    linear-gradient(145deg, rgba(12, 9, 20, 0.2), rgba(12, 9, 20, 0.72)),
+    url("https://images.unsplash.com/photo-1611195974226-a6a9be9dd763?auto=format&fit=crop&w=1200&q=80");
+}
+
+.category-product-spec-line {
+  margin-top: 0.2rem !important;
+  color: #f2dfcf !important;
+  font-size: 0.93rem !important;
+}
+
+.category-product-spec-line strong {
+  color: #f2dfcf;
+  font-weight: 600;
+}
+
+.category-product-cta {
+  margin-top: 0.85rem;
+  width: 100%;
+  justify-content: center;
+}
+
+.category-product-secondary {
+  width: 100%;
+}
+
+.subcategory-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+}
+
+.subcategory-chip {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.45rem 0.85rem;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  color: #efe7ff;
+  background: rgba(124, 92, 252, 0.12);
+  font-size: 0.82rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: border-color 0.2s ease, transform 0.2s ease, background-color 0.2s ease;
+}
+
+.subcategory-chip:hover {
+  border-color: rgba(255, 140, 43, 0.45);
+  background: rgba(255, 140, 43, 0.12);
+  transform: translateY(-1px);
+}
+
+.subcategory-block {
+  scroll-margin-top: 130px;
+}
+
+.subcategory-header {
+  margin-bottom: 1rem;
+}
+
+.subcategory-title {
+  margin: 0;
+  font-family: Poppins, sans-serif;
+  font-size: clamp(1.2rem, 2.2vw, 1.55rem);
+}
+
+.subcategory-description {
+  margin: 0.35rem 0 0;
+  color: var(--text-secondary);
+  max-width: 62ch;
+}
+
+.product-breadcrumb {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
+
+.product-breadcrumb a {
+  color: #e5d7ff;
+  text-decoration: none;
+}
+
+.product-breadcrumb a:hover {
+  color: #ffd4ae;
+}
+
+.product-detail-gallery-card,
+.product-detail-info-card {
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: linear-gradient(140deg, rgba(22, 15, 39, 0.85), rgba(10, 8, 18, 0.92));
+}
+
+.product-detail-gallery-card {
+  padding: 1rem;
+}
+
+.product-detail-main-image {
+  width: 100%;
+  height: 460px;
+  object-fit: cover;
+  border-radius: 12px;
+  display: block;
+}
+
+.product-detail-thumbs {
+  margin-top: 0.85rem;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.65rem;
+}
+
+.product-thumb {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  padding: 0;
+  overflow: hidden;
+  background: transparent;
+  cursor: pointer;
+  transition: border-color 0.2s ease, transform 0.2s ease;
+}
+
+.product-thumb img {
+  width: 100%;
+  height: 88px;
+  object-fit: cover;
+  display: block;
+}
+
+.product-thumb:hover {
+  border-color: rgba(255, 140, 43, 0.45);
+  transform: translateY(-2px);
+}
+
+.product-thumb.is-active {
+  border-color: rgba(255, 140, 43, 0.82);
+}
+
+.product-detail-info-card {
+  padding: 1.35rem;
+}
+
+.product-detail-title {
+  margin: 0.2rem 0 0;
+  font-family: Poppins, sans-serif;
+  font-size: clamp(1.45rem, 2.3vw, 2rem);
+}
+
+.product-detail-description {
+  margin-top: 0.8rem;
+  color: var(--text-secondary);
+}
+
+.product-detail-specs {
+  margin: 0.9rem 0 0;
+  padding-left: 1.1rem;
+  color: #f2dfcf;
+}
+
+.product-detail-specs li {
+  margin-bottom: 0.34rem;
 }
 
 .text-link {
@@ -809,6 +1183,13 @@ body {
 .contact-box p {
   color: var(--text-secondary);
   margin-top: 0.7rem;
+}
+
+.contact-box .contact-box-trust {
+  margin-top: 0.55rem;
+  font-size: 0.88rem;
+  font-weight: 500;
+  color: rgba(255, 193, 168, 0.88);
 }
 
 .site-footer {
