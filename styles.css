@@ -421,9 +421,11 @@ body {
 }
 
 .product-image {
+  width: 100%;
   height: 220px;
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
 }
 
 .product-1 {
@@ -492,8 +494,30 @@ body {
   border: 1px solid rgba(255, 140, 43, 0.28);
 }
 
+/* Coluna: `d-flex flex-column` na col + `flex-fill w-100` no article; ver relogios / tabuleiros / pecas */
+.category-product-card {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  width: 100%;
+  min-height: 0;
+}
+
+.category-product-card > .category-product-image-link {
+  flex-shrink: 0;
+}
+
 .category-product-card .product-body {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  min-height: 0;
   padding: 1.1rem;
+}
+
+/* mt-3 do Bootstrap usa !important — sem !important o auto nunca empurra os botões */
+.category-product-card .product-body > .d-grid {
+  margin-top: auto !important;
 }
 
 .category-product-card .product-body h3 {
@@ -554,22 +578,50 @@ body {
     url("https://images.unsplash.com/photo-1580541832626-2a7131ee809f?auto=format&fit=crop&w=1200&q=80");
 }
 
-.relogio-chessclock-image {
-  background-image:
-    linear-gradient(145deg, rgba(12, 9, 20, 0.2), rgba(12, 9, 20, 0.72)),
-    url("https://images.unsplash.com/photo-1528819622765-d6bcf132f793?auto=format&fit=crop&w=1200&q=80");
+/* Card com <img>: enquadramento estável (object-fit) em vez de só background */
+.product-image.product-image--photo {
+  position: relative;
+  overflow: hidden;
+  background-color: #100b18;
+  background-image: none;
 }
 
-.relogio-leap-image {
-  background-image:
-    linear-gradient(145deg, rgba(12, 9, 20, 0.2), rgba(12, 9, 20, 0.72)),
-    url("https://images.unsplash.com/photo-1580541832626-2a7131ee809f?auto=format&fit=crop&w=1200&q=80");
+.product-image.product-image--photo > img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 
-.relogio-dgt-3000-image {
-  background-image:
-    linear-gradient(145deg, rgba(12, 9, 20, 0.2), rgba(12, 9, 20, 0.72)),
-    url("https://images.unsplash.com/photo-1611195974226-a6a9be9dd763?auto=format&fit=crop&w=1200&q=80");
+.category-product-card .product-image.product-image--photo > img {
+  object-fit: cover;
+  object-position: center;
+}
+
+/* Leap listagem — classe .leap-in-hand-photo no <img> (ficheiro 632763); não usar só [src*=] (URL resolvida) */
+.category-product-card .product-image.product-image--photo.relogio-leap-card > img.leap-in-hand-photo {
+  position: absolute;
+  inset: unset;
+  left: 0;
+  right: 0;
+  width: 100%;
+  top: -62%;
+  height: 208%;
+  bottom: auto;
+  z-index: 0;
+  object-fit: cover;
+  object-position: 50% 8%;
+}
+
+.product-image.product-image--photo::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  background: linear-gradient(145deg, rgba(12, 9, 20, 0.2), rgba(12, 9, 20, 0.72));
 }
 
 .relogio-dgt-2010-image {
@@ -765,10 +817,63 @@ body {
   padding: 1rem;
 }
 
+.product-detail-gallery--cover .product-detail-main-image {
+  object-fit: contain;
+  object-position: top center;
+}
+
+.product-detail-gallery--cover .product-thumb img {
+  object-fit: contain;
+  object-position: center;
+}
+
+/* Relógio Leap — foto 632763: relógio na zona inferior do arquivo; frame evita crop central que corta o aparelho */
+.product-detail-gallery--cover.product-detail-gallery--leap .product-detail-main-frame {
+  position: relative;
+  overflow: visible;
+  border-radius: 12px;
+  height: auto;
+  width: 100%;
+  background-color: #100b18;
+}
+
+.product-detail-gallery--cover.product-detail-gallery--leap .product-detail-main-frame .product-detail-main-image {
+  position: static;
+  inset: auto;
+  width: 100%;
+  height: auto;
+  border-radius: 0;
+  object-fit: contain;
+  object-position: top center;
+  transform: none;
+}
+
+/* Classe aplicada por JS quando a foto ativa é a 632763 (mesmo ficheiro, URL absoluta ou relativa) */
+.product-detail-gallery--cover.product-detail-gallery--leap .product-detail-main-frame .product-detail-main-image.leap-in-hand-photo {
+  inset: auto;
+  left: auto;
+  right: auto;
+  width: 100%;
+  top: auto;
+  height: auto;
+  bottom: auto;
+  object-fit: contain;
+  object-position: top center;
+  transform: none;
+}
+
+.product-detail-gallery--cover.product-detail-gallery--leap .product-thumb img.leap-in-hand-thumb {
+  object-fit: contain;
+  object-position: center;
+  transform: none;
+  transform-origin: center;
+}
+
 .product-detail-main-image {
   width: 100%;
-  height: 460px;
-  object-fit: cover;
+  height: auto;
+  object-fit: contain;
+  object-position: top center;
   border-radius: 12px;
   display: block;
 }
@@ -793,8 +898,17 @@ body {
 .product-thumb img {
   width: 100%;
   height: 88px;
-  object-fit: cover;
+  object-fit: contain;
+  object-position: center;
   display: block;
+}
+
+.product-thumb-crop--start {
+  object-position: 22% center;
+}
+
+.product-thumb-crop--end {
+  object-position: 78% center;
 }
 
 .product-thumb:hover {
@@ -808,6 +922,16 @@ body {
 
 .product-detail-info-card {
   padding: 1.35rem;
+}
+
+/* CTA WhatsApp em largura total: ícone + texto centrados (d-grid estica o .btn) */
+.product-detail-info-card .btn.wpp-link {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+  box-sizing: border-box;
 }
 
 .product-detail-title {
