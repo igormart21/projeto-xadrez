@@ -669,19 +669,19 @@ body {
 .peca-madeira-german-image {
   background-image:
     linear-gradient(145deg, rgba(12, 9, 20, 0.2), rgba(12, 9, 20, 0.72)),
-    url("https://images.unsplash.com/photo-1580541832626-2a7131ee809f?auto=format&fit=crop&w=1200&q=80");
+    url("./assets/peça xadrez/PHOTO-2026-04-30-09-07-43.jpg");
 }
 
 .peca-sinquifield-2014-image {
   background-image:
     linear-gradient(145deg, rgba(12, 9, 20, 0.2), rgba(12, 9, 20, 0.72)),
-    url("https://images.unsplash.com/photo-1611195974226-a6a9be9dd763?auto=format&fit=crop&w=1200&q=80");
+    url("./assets/peça xadrez/Sinquifield 2014/PHOTO-2026-04-30-09-11-26 2.jpg");
 }
 
 .peca-sinquifield-2019-image {
   background-image:
     linear-gradient(145deg, rgba(12, 9, 20, 0.2), rgba(12, 9, 20, 0.72)),
-    url("https://images.unsplash.com/photo-1611195974226-a6a9be9dd763?auto=format&fit=crop&w=1200&q=80");
+    url("./assets/peça xadrez/modelo Sinquifield 201/PHOTO-2026-04-30-09-10-19 2.jpg");
 }
 
 .peca-madeira-zagreb-image {
@@ -693,13 +693,13 @@ body {
 .peca-madeira-fide-image {
   background-image:
     linear-gradient(145deg, rgba(12, 9, 20, 0.2), rgba(12, 9, 20, 0.72)),
-    url("https://images.unsplash.com/photo-1528819622765-d6bcf132f793?auto=format&fit=crop&w=1200&q=80");
+    url("./assets/peça xadrez/modelo FIDE/PHOTO-2026-04-30-09-09-25.jpg");
 }
 
 .peca-fischer-spassky-image {
   background-image:
     linear-gradient(145deg, rgba(12, 9, 20, 0.2), rgba(12, 9, 20, 0.72)),
-    url("https://images.unsplash.com/photo-1611195974226-a6a9be9dd763?auto=format&fit=crop&w=1200&q=80");
+    url("./assets/peça xadrez/abaixo modelo Fischer x Spassky (1972)/PHOTO-2026-04-30-09-09-00.jpg");
 }
 
 .category-product-spec-line {
