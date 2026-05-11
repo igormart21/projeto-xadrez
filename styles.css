@@ -460,7 +460,13 @@ body {
   /* Mesma imagem da Home (collection-5) */
   background-image:
     linear-gradient(145deg, rgba(12, 9, 20, 0.2), rgba(12, 9, 20, 0.72)),
-    url("https://images.unsplash.com/photo-1611195974226-a6a9be9dd763?auto=format&fit=crop&w=1200&q=80");
+    url("./assets/Mesas/PHOTO-2026-05-11-08-43-52.jpg");
+}
+
+.mesa-personalizada-image {
+  background-image:
+    linear-gradient(145deg, rgba(12, 9, 20, 0.2), rgba(12, 9, 20, 0.72)),
+    url("./assets/Mesas/PHOTO-2026-05-11-08-43-52.jpg");
 }
 
 .product-body {
@@ -557,25 +563,25 @@ body {
 .tabuleiro-marchetado-image {
   background-image:
     linear-gradient(145deg, rgba(12, 9, 20, 0.2), rgba(12, 9, 20, 0.72)),
-    url("https://images.unsplash.com/photo-1611195974226-a6a9be9dd763?auto=format&fit=crop&w=1200&q=80");
+    url("./assets/Tabuleiros%20/Tabuleiros%20Maechetado%20/WhatsApp%20Image%202026-05-11%20at%2008.22.35.jpeg");
 }
 
 .tabuleiro-marchetado-pvc-image {
   background-image:
     linear-gradient(145deg, rgba(12, 9, 20, 0.2), rgba(12, 9, 20, 0.72)),
-    url("https://images.unsplash.com/photo-1611195974226-a6a9be9dd763?auto=format&fit=crop&w=1200&q=80");
+    url("./assets/Tabuleiros%20/Tabuleiro%20em%20PVC/WhatsApp%20Image%202026-05-11%20at%2008.24.57%20(1).jpeg");
 }
 
 .tabuleiro-mousepad-image {
   background-image:
     linear-gradient(145deg, rgba(12, 9, 20, 0.2), rgba(12, 9, 20, 0.72)),
-    url("https://images.unsplash.com/photo-1528819622765-d6bcf132f793?auto=format&fit=crop&w=1200&q=80");
+    url("./assets/Tabuleiros%20/Tabuleiro%20em%20mousepad/WhatsApp%20Image%202026-05-11%20at%2008.25.41.jpeg");
 }
 
 .tabuleiro-curvim-image {
   background-image:
     linear-gradient(145deg, rgba(12, 9, 20, 0.2), rgba(12, 9, 20, 0.72)),
-    url("https://images.unsplash.com/photo-1580541832626-2a7131ee809f?auto=format&fit=crop&w=1200&q=80");
+    url("./assets/Tabuleiros%20/Tabuleiro%20em%20curvim/WhatsApp%20Image%202026-05-11%20at%2008.28.48.jpeg");
 }
 
 /* Card com <img>: enquadramento estável (object-fit) em vez de só background */
@@ -633,37 +639,37 @@ body {
 .peca-zagreb-preto-branco-image {
   background-image:
     linear-gradient(145deg, rgba(12, 9, 20, 0.2), rgba(12, 9, 20, 0.72)),
-    url("https://images.unsplash.com/photo-1528819622765-d6bcf132f793?auto=format&fit=crop&w=1200&q=80");
+    url("./assets/peça%20xadrez/peças%20em%20plastico%20/WhatsApp%20Image%202026-05-11%20at%2007.56.30.jpeg");
 }
 
 .peca-zagreb-madeira-image {
   background-image:
     linear-gradient(145deg, rgba(12, 9, 20, 0.2), rgba(12, 9, 20, 0.72)),
-    url("https://images.unsplash.com/photo-1611195974226-a6a9be9dd763?auto=format&fit=crop&w=1200&q=80");
+    url("./assets/peça%20xadrez/untitled%20folder/WhatsApp%20Image%202026-05-11%20at%2008.09.35%20(2).jpeg");
 }
 
 .peca-german-image {
   background-image:
     linear-gradient(145deg, rgba(12, 9, 20, 0.2), rgba(12, 9, 20, 0.72)),
-    url("https://images.unsplash.com/photo-1580541832626-2a7131ee809f?auto=format&fit=crop&w=1200&q=80");
+    url("./assets/peça%20xadrez/untitled%20folder%202/WhatsApp%20Image%202026-05-11%20at%2008.10.02.jpeg");
 }
 
 .peca-fischer-image {
   background-image:
     linear-gradient(145deg, rgba(12, 9, 20, 0.2), rgba(12, 9, 20, 0.72)),
-    url("https://images.unsplash.com/photo-1611195974226-a6a9be9dd763?auto=format&fit=crop&w=1200&q=80");
+    url("./assets/peça%20xadrez/untitled%20folder%203/WhatsApp%20Image%202026-05-11%20at%2008.19.48.jpeg");
 }
 
 .peca-jaehring-image {
   background-image:
     linear-gradient(145deg, rgba(12, 9, 20, 0.2), rgba(12, 9, 20, 0.72)),
-    url("https://images.unsplash.com/photo-1611195974226-a6a9be9dd763?auto=format&fit=crop&w=1200&q=80");
+    url("./assets/peça%20xadrez/untitled%20folder%204/PHOTO-2026-05-11-08-30-20.jpg");
 }
 
 .peca-escolar-image {
   background-image:
     linear-gradient(145deg, rgba(12, 9, 20, 0.2), rgba(12, 9, 20, 0.72)),
-    url("https://images.unsplash.com/photo-1580541832626-2a7131ee809f?auto=format&fit=crop&w=1200&q=80");
+    url("./assets/peça%20xadrez/untitled%20folder%205/PHOTO-2026-05-11-08-52-00.jpg");
 }
 
 .peca-madeira-german-image {
@@ -687,7 +693,7 @@ body {
 .peca-madeira-zagreb-image {
   background-image:
     linear-gradient(145deg, rgba(12, 9, 20, 0.2), rgba(12, 9, 20, 0.72)),
-    url("https://images.unsplash.com/photo-1611195974226-a6a9be9dd763?auto=format&fit=crop&w=1200&q=80");
+    url("./assets/peça xadrez/Zagreb/PHOTO-2026-04-30-14-31-28.jpg");
 }
 
 .peca-madeira-fide-image {
@@ -881,8 +887,24 @@ body {
 .product-detail-thumbs {
   margin-top: 0.85rem;
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(5, minmax(0, 1fr));
   gap: 0.65rem;
+}
+
+.thumb-with-label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.thumb-label {
+  font-size: 0.72rem;
+  color: #d4caea;
+  text-align: center;
+  font-weight: 500;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .product-thumb {
