@@ -466,7 +466,7 @@ body {
 .mesa-personalizada-image {
   background-image:
     linear-gradient(145deg, rgba(12, 9, 20, 0.2), rgba(12, 9, 20, 0.72)),
-    url("./assets/Mesas/PHOTO-2026-05-11-08-43-52.jpg");
+    url("./assets/mesas/PHOTO-2026-05-11-08-43-52.jpg");
 }
 
 .product-body {
@@ -563,25 +563,25 @@ body {
 .tabuleiro-marchetado-image {
   background-image:
     linear-gradient(145deg, rgba(12, 9, 20, 0.2), rgba(12, 9, 20, 0.72)),
-    url("./assets/Tabuleiros%20/Tabuleiros%20Maechetado%20/WhatsApp%20Image%202026-05-11%20at%2008.22.35.jpeg");
+    url("./assets/tabuleiros/marchetado/WhatsApp-Image-2026-05-11-at-08.22.35.jpeg");
 }
 
 .tabuleiro-marchetado-pvc-image {
   background-image:
     linear-gradient(145deg, rgba(12, 9, 20, 0.2), rgba(12, 9, 20, 0.72)),
-    url("./assets/Tabuleiros%20/Tabuleiro%20em%20PVC/WhatsApp%20Image%202026-05-11%20at%2008.24.57%20(1).jpeg");
+    url("./assets/tabuleiros/pvc/WhatsApp-Image-2026-05-11-at-08.24.57-(1).jpeg");
 }
 
 .tabuleiro-mousepad-image {
   background-image:
     linear-gradient(145deg, rgba(12, 9, 20, 0.2), rgba(12, 9, 20, 0.72)),
-    url("./assets/Tabuleiros%20/Tabuleiro%20em%20mousepad/WhatsApp%20Image%202026-05-11%20at%2008.25.41.jpeg");
+    url("./assets/tabuleiros/mousepad/WhatsApp-Image-2026-05-11-at-08.25.41.jpeg");
 }
 
 .tabuleiro-curvim-image {
   background-image:
     linear-gradient(145deg, rgba(12, 9, 20, 0.2), rgba(12, 9, 20, 0.72)),
-    url("./assets/Tabuleiros%20/Tabuleiro%20em%20curvim/WhatsApp%20Image%202026-05-11%20at%2008.28.48.jpeg");
+    url("./assets/tabuleiros/curvim/WhatsApp-Image-2026-05-11-at-08.28.48.jpeg");
 }
 
 /* Card com <img>: enquadramento estável (object-fit) em vez de só background */
@@ -639,73 +639,73 @@ body {
 .peca-zagreb-preto-branco-image {
   background-image:
     linear-gradient(145deg, rgba(12, 9, 20, 0.2), rgba(12, 9, 20, 0.72)),
-    url("./assets/peça%20xadrez/peças%20em%20plastico%20/WhatsApp%20Image%202026-05-11%20at%2007.56.30.jpeg");
+    url("assets/pecas-xadrez/pecas-zagreb-pb/zagreb-pb-principal.jpeg");
 }
 
 .peca-zagreb-madeira-image {
   background-image:
     linear-gradient(145deg, rgba(12, 9, 20, 0.2), rgba(12, 9, 20, 0.72)),
-    url("./assets/peça%20xadrez/untitled%20folder/WhatsApp%20Image%202026-05-11%20at%2008.09.35%20(2).jpeg");
+    url("assets/pecas-xadrez/zagreb-tom-madeira/zagreb-madeira-principal.jpeg");
 }
 
 .peca-german-image {
   background-image:
     linear-gradient(145deg, rgba(12, 9, 20, 0.2), rgba(12, 9, 20, 0.72)),
-    url("./assets/peça%20xadrez/untitled%20folder%202/WhatsApp%20Image%202026-05-11%20at%2008.10.02.jpeg");
+    url("assets/pecas-xadrez/pecas-german-madeira/german-madeira-principal.jpeg");
 }
 
 .peca-fischer-image {
   background-image:
     linear-gradient(145deg, rgba(12, 9, 20, 0.2), rgba(12, 9, 20, 0.72)),
-    url("./assets/peça%20xadrez/untitled%20folder%203/WhatsApp%20Image%202026-05-11%20at%2008.19.48.jpeg");
+    url("assets/pecas-xadrez/pecas-german-plastico/german-plastico-principal.jpeg");
 }
 
 .peca-jaehring-image {
   background-image:
     linear-gradient(145deg, rgba(12, 9, 20, 0.2), rgba(12, 9, 20, 0.72)),
-    url("./assets/peça%20xadrez/untitled%20folder%204/PHOTO-2026-05-11-08-30-20.jpg");
+    url("assets/pecas-xadrez/pecas-jaehring/jaehring-principal.jpg");
 }
 
 .peca-escolar-image {
   background-image:
     linear-gradient(145deg, rgba(12, 9, 20, 0.2), rgba(12, 9, 20, 0.72)),
-    url("./assets/peça%20xadrez/untitled%20folder%205/PHOTO-2026-05-11-08-52-00.jpg");
+    url("assets/pecas-xadrez/pecas-escolar/PHOTO-2026-05-11-08-52-00.jpg");
 }
 
 .peca-madeira-german-image {
   background-image:
     linear-gradient(145deg, rgba(12, 9, 20, 0.2), rgba(12, 9, 20, 0.72)),
-    url("./assets/peça xadrez/PHOTO-2026-04-30-09-07-43.jpg");
+    url("assets/pecas-xadrez/PHOTO-2026-04-30-09-07-43.jpg");
 }
 
 .peca-sinquifield-2014-image {
   background-image:
     linear-gradient(145deg, rgba(12, 9, 20, 0.2), rgba(12, 9, 20, 0.72)),
-    url("./assets/peça xadrez/Sinquifield 2014/PHOTO-2026-04-30-09-11-26 2.jpg");
+    url("assets/pecas-xadrez/sinquifield-2014/PHOTO-2026-04-30-09-11-26-2.jpg");
 }
 
 .peca-sinquifield-2019-image {
   background-image:
     linear-gradient(145deg, rgba(12, 9, 20, 0.2), rgba(12, 9, 20, 0.72)),
-    url("./assets/peça xadrez/modelo Sinquifield 201/PHOTO-2026-04-30-09-10-19 2.jpg");
+    url("assets/pecas-xadrez/sinquifield-2019/PHOTO-2026-04-30-09-10-19-2.jpg");
 }
 
 .peca-madeira-zagreb-image {
   background-image:
     linear-gradient(145deg, rgba(12, 9, 20, 0.2), rgba(12, 9, 20, 0.72)),
-    url("./assets/peça xadrez/Zagreb/PHOTO-2026-04-30-14-31-28.jpg");
+    url("assets/pecas-xadrez/zagreb-madeira/PHOTO-2026-04-30-14-31-28.jpg");
 }
 
 .peca-madeira-fide-image {
   background-image:
     linear-gradient(145deg, rgba(12, 9, 20, 0.2), rgba(12, 9, 20, 0.72)),
-    url("./assets/peça xadrez/modelo FIDE/PHOTO-2026-04-30-09-09-25.jpg");
+    url("assets/pecas-xadrez/modelo-fide/PHOTO-2026-04-30-09-09-25.jpg");
 }
 
 .peca-fischer-spassky-image {
   background-image:
     linear-gradient(145deg, rgba(12, 9, 20, 0.2), rgba(12, 9, 20, 0.72)),
-    url("./assets/peça xadrez/abaixo modelo Fischer x Spassky (1972)/PHOTO-2026-04-30-09-09-00.jpg");
+    url("assets/pecas-xadrez/fischer-spassky/PHOTO-2026-04-30-09-09-00.jpg");
 }
 
 .category-product-spec-line {
