@@ -80,21 +80,47 @@ body {
 }
 
 @media (max-width: 991.98px) {
-  .site-header .navbar {
+  .site-header .navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     position: relative;
+    width: 100%;
+  }
+
+  /* Ajuste para o logo não ser absoluto e respeitar o flex no mobile se necessário, 
+     ou mantê-lo absoluto mas garantir que o toggler tenha espaço */
+  .brand-logo-link {
+    position: relative !important;
+    left: 0 !important;
+    top: 0 !important;
+    transform: none !important;
+    order: 1;
+  }
+
+  .site-header .navbar-toggler {
+    order: 2;
+    margin-left: auto;
+    padding-right: 0;
   }
 
   .site-header .navbar-collapse {
     position: absolute;
     top: 100%;
     right: 0;
-    width: 220px;
-    background: rgba(8, 6, 15, 0.97);
-    border: 1px solid rgba(255, 255, 255, 0.08);
-    border-radius: 0.75rem;
-    padding: 1rem 1.25rem;
-    z-index: 999;
-    box-shadow: 0 8px 32px rgba(0,0,0,0.4);
+    width: 240px;
+    background: rgba(13, 10, 25, 0.98);
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 1.5rem;
+    z-index: 1000;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.6);
+    margin-top: 0.5rem;
+  }
+
+  .navbar-nav {
+    text-align: right;
   }
 }
 
@@ -1703,6 +1729,7 @@ body {
 
   .brand-logo {
     height: 42px;
+    transform: none !important;
   }
 
   .footer-logo {
