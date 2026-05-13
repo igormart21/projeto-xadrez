@@ -66,6 +66,7 @@ body {
   min-height: 70px;
   padding-top: 0.65rem !important;
   padding-bottom: 0.65rem !important;
+  flex-wrap: wrap;
 }
 
 .site-header .navbar-toggler {
@@ -79,10 +80,12 @@ body {
 }
 
 .site-header .navbar-collapse {
+  flex-basis: 100%;
+  width: 100%;
   background: rgba(8, 6, 15, 0.95);
-  padding: 1rem 1.25rem;
   border-radius: 0.75rem;
-  margin-top: 0.5rem;
+  padding: 0.5rem 1rem 1rem;
+  margin-top: 0.25rem;
 }
 
 .brand-title {
