@@ -66,26 +66,28 @@ body {
   min-height: 70px;
   padding-top: 0.65rem !important;
   padding-bottom: 0.65rem !important;
-  flex-wrap: wrap;
 }
 
 .site-header .navbar-toggler {
   border: none;
   outline: none;
   box-shadow: none;
+  color: rgba(255,255,255,0.85);
 }
 
 .site-header .navbar-toggler-icon {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255,255,255,0.85)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 
-.site-header .navbar-collapse {
-  flex-basis: 100%;
-  width: 100%;
-  background: rgba(8, 6, 15, 0.95);
-  border-radius: 0.75rem;
-  padding: 0.5rem 1rem 1rem;
-  margin-top: 0.25rem;
+@media (max-width: 991.98px) {
+  .site-header .navbar-collapse.show,
+  .site-header .navbar-collapse.collapsing {
+    background: rgba(8, 6, 15, 0.97);
+    border-radius: 0.75rem;
+    padding: 0.75rem 1rem 1rem;
+    margin-top: 0.5rem;
+    width: 100%;
+  }
 }
 
 .brand-title {
