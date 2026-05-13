@@ -89,11 +89,9 @@ body {
 
 .brand-logo {
   width: auto;
-  height: 86px;
+  height: 48px;
   max-width: 45vw;
   display: block;
-  transform: scale(2.2);
-  transform-origin: left center;
 }
 
 /* Slogan oficial — barra sob o menu e rodapé */
@@ -1650,8 +1648,7 @@ body {
   }
 
   .brand-logo {
-    height: 68px;
-    transform: scale(1.9);
+    height: 42px;
   }
 
   .footer-logo {
