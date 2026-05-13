@@ -1530,6 +1530,8 @@ body {
   text-decoration: none;
   color: var(--text-secondary);
   transition: color 0.2s ease;
+  display: inline-flex;
+  align-items: center;
 }
 
 .footer-links-col a:hover {
