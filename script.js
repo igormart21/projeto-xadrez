@@ -191,3 +191,15 @@ function initHeroParticles() {
 }
 
 initHeroParticles();
+
+document.querySelectorAll(".wpp-link").forEach((link) => {
+  link.addEventListener("click", () => {
+    if (typeof gtag === "function") {
+      gtag("event", "conversion", {
+        send_to: "AW-16631769005",
+        event_category: "whatsapp",
+        event_label: "clique_botao_wpp",
+      });
+    }
+  });
+});
