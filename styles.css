@@ -1533,6 +1533,8 @@ body {
   transition: color 0.2s ease;
   display: inline-flex;
   align-items: center;
+  word-break: break-all;
+  overflow-wrap: break-word;
 }
 
 .footer-links-col a:hover {
