@@ -80,13 +80,21 @@ body {
 }
 
 @media (max-width: 991.98px) {
-  .site-header .navbar-collapse.show,
-  .site-header .navbar-collapse.collapsing {
+  .site-header .navbar {
+    position: relative;
+  }
+
+  .site-header .navbar-collapse {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 220px;
     background: rgba(8, 6, 15, 0.97);
+    border: 1px solid rgba(255, 255, 255, 0.08);
     border-radius: 0.75rem;
-    padding: 0.75rem 1rem 1rem;
-    margin-top: 0.5rem;
-    width: 100%;
+    padding: 1rem 1.25rem;
+    z-index: 999;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.4);
   }
 }
 
