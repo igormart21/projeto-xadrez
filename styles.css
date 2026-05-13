@@ -358,6 +358,16 @@ body {
   color: #d6d0ea;
 }
 
+.section-header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.section-header.text-center {
+  align-items: center;
+}
+
 .section-header h2 {
   margin: 0.35rem 0 0;
   font-size: clamp(1.7rem, 4vw, 2.5rem);
