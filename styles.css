@@ -107,16 +107,17 @@ body {
   .site-header .navbar-collapse {
     position: absolute;
     top: 100%;
-    right: 1rem;
-    width: 240px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 180px;
     background: rgba(13, 10, 25, 0.98);
     backdrop-filter: blur(15px);
     border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 12px;
-    padding: 1.5rem;
+    border-radius: 10px;
+    padding: 0.75rem 1rem;
     z-index: 1000;
-    box-shadow: 0 15px 35px rgba(0,0,0,0.6);
-    margin-top: 0.5rem;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+    margin-top: 0.4rem;
   }
 
   .navbar-nav {
