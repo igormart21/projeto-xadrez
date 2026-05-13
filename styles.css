@@ -107,7 +107,7 @@ body {
   .site-header .navbar-collapse {
     position: absolute;
     top: 100%;
-    right: 0;
+    right: 1rem;
     width: 240px;
     background: rgba(13, 10, 25, 0.98);
     backdrop-filter: blur(15px);
