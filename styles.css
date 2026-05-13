@@ -1479,8 +1479,8 @@ body {
 /* Guarantee Section */
 .guarantee-section {
   background: transparent;
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 .guarantee-card {
