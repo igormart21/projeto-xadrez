@@ -1438,6 +1438,56 @@ body {
   text-align: right;
 }
 
+.footer-links-col {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+}
+
+.footer-links-col a {
+  text-decoration: none;
+  color: var(--text-secondary);
+  transition: color 0.2s ease;
+}
+
+.footer-links-col a:hover {
+  color: var(--accent-orange);
+}
+
+.footer-bottom-bar {
+  margin-top: 2rem;
+  padding-top: 1.2rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.footer-copy {
+  color: var(--text-secondary);
+  font-size: 0.88rem;
+}
+
+.footer-credit-inline {
+  color: var(--text-secondary);
+  font-size: 0.88rem;
+}
+
+.footer-credit-inline a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.footer-credit-inline a:hover {
+  color: var(--accent-purple);
+}
+
 .social-instagram::before,
 .social-facebook::before {
   content: "";
