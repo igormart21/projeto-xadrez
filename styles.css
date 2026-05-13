@@ -1461,21 +1461,22 @@ body {
   width: 110px;
   height: 110px;
   border-radius: 50%;
-  background: linear-gradient(135deg, var(--accent-purple), #7b2fff);
-  box-shadow: 0 0 32px rgba(140, 60, 255, 0.45);
+  background: rgba(18, 10, 36, 0.85);
+  border: 2px solid #8800CC;
+  box-shadow: 0 0 32px rgba(136, 0, 204, 0.35);
   line-height: 1;
 }
 
 .guarantee-number {
   font-size: 2.6rem;
   font-weight: 700;
-  color: #fff;
+  color: #8800CC;
   font-family: 'Poppins', sans-serif;
 }
 
 .guarantee-unit {
   font-size: 0.85rem;
-  color: rgba(255,255,255,0.85);
+  color: #8800CC;
   font-family: 'Poppins', sans-serif;
   letter-spacing: 0.04em;
 }
