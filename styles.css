@@ -800,6 +800,20 @@ body {
   gap: 0.65rem;
 }
 
+.category-obs-notice {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: rgba(245, 221, 198, 0.7);
+  background: rgba(255, 140, 43, 0.07);
+  border: 1px solid rgba(255, 140, 43, 0.2);
+  border-radius: 8px;
+  padding: 0.4rem 0.85rem;
+  letter-spacing: 0.01em;
+}
+
 .category-back-arrow {
   display: inline-flex;
   align-items: center;
