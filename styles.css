@@ -800,6 +800,34 @@ body {
   gap: 0.65rem;
 }
 
+.product-price-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.product-price-old {
+  font-size: 0.95rem;
+  color: rgba(255, 255, 255, 0.35);
+  text-decoration: line-through;
+  font-weight: 400;
+}
+
+.product-price-current {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #f5c992;
+  letter-spacing: -0.01em;
+}
+
+.product-price-gift {
+  display: inline-flex;
+  align-items: center;
+  font-size: 0.8rem;
+  color: rgba(245, 221, 198, 0.6);
+  margin-top: 0.15rem;
+}
+
 .category-obs-notice {
   display: inline-flex;
   align-items: center;
