@@ -199,11 +199,11 @@ initHeroParticles();
   const ctx = canvas.getContext('2d');
 
   function resize() {
-    const size = window.innerWidth < 992 ? 260 : 360;
-    canvas.width = size;
-    canvas.height = size;
-    canvas.style.width = size + 'px';
-    canvas.style.height = size + 'px';
+    const hero = canvas.closest('section') || canvas.parentElement;
+    const w = hero ? hero.offsetWidth : window.innerWidth;
+    const h = hero ? hero.offsetHeight : window.innerHeight;
+    canvas.width  = w;
+    canvas.height = h;
   }
   resize();
   window.addEventListener('resize', resize);
@@ -251,27 +251,34 @@ initHeroParticles();
   const PAUSE_MS = 1600;
 
   function draw(fromSq, toSq, t) {
-    const S = canvas.width;
+    const W = canvas.width;
+    const H = canvas.height;
+    const S = Math.min(W, H) * 0.9;
     const C = S / 8;
-    ctx.clearRect(0, 0, S, S);
+    const ox = (W - S) / 2;
+    const oy = (H - S) / 2;
+    ctx.clearRect(0, 0, W, H);
 
     for (let r = 0; r < 8; r++) {
       for (let c = 0; c < 8; c++) {
+        const x = ox + c * C;
+        const y = oy + r * C;
+
         // Base square
         ctx.fillStyle = (r + c) % 2 === 0 ? LIGHT : DARK;
-        ctx.fillRect(c*C, r*C, C, C);
+        ctx.fillRect(x, y, C, C);
 
         // From highlight (fades out)
         if (fromSq && fromSq[0]===r && fromSq[1]===c) {
           const a = t < 0.5 ? 0.7 : 0.7 * (1 - (t - 0.5) / 0.5);
           ctx.fillStyle = `rgba(255,140,43,${a})`;
-          ctx.fillRect(c*C, r*C, C, C);
+          ctx.fillRect(x, y, C, C);
         }
         // To highlight (fades in after midpoint)
         if (toSq && toSq[0]===r && toSq[1]===c && t > 0.45) {
           const a = ((t - 0.45) / 0.55) * 0.65;
           ctx.fillStyle = `rgba(255,210,80,${a})`;
-          ctx.fillRect(c*C, r*C, C, C);
+          ctx.fillRect(x, y, C, C);
         }
 
         // Piece
@@ -284,8 +291,8 @@ initHeroParticles();
           ctx.fillStyle = isBlack ? '#1e0900' : '#fdf0dc';
           ctx.strokeStyle = isBlack ? 'rgba(255,200,100,0.25)' : 'rgba(0,0,0,0.25)';
           ctx.lineWidth = 0.8;
-          ctx.strokeText(UNI[p], c*C + C/2, r*C + C/2 + 1);
-          ctx.fillText(UNI[p], c*C + C/2, r*C + C/2 + 1);
+          ctx.strokeText(UNI[p], x + C/2, y + C/2 + 1);
+          ctx.fillText(UNI[p], x + C/2, y + C/2 + 1);
         }
       }
     }
@@ -293,7 +300,7 @@ initHeroParticles();
     // Border
     ctx.strokeStyle = 'rgba(255,140,43,0.35)';
     ctx.lineWidth = 1.5;
-    ctx.strokeRect(0.75, 0.75, S - 1.5, S - 1.5);
+    ctx.strokeRect(ox + 0.75, oy + 0.75, S - 1.5, S - 1.5);
   }
 
   function animate(ts) {
