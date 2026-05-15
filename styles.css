@@ -1357,83 +1357,100 @@ button.subcategory-chip {
   max-width: 62ch;
 }
 
-.testimonials-mask {
+/* Carrossel de depoimentos */
+.testimonials-carousel {
   position: relative;
-  max-height: 760px;
-  overflow: hidden;
-  -webkit-mask-image: linear-gradient(to bottom, transparent, #000 16%, #000 84%, transparent);
-  mask-image: linear-gradient(to bottom, transparent, #000 16%, #000 84%, transparent);
+  max-width: 780px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 3.5rem;
 }
 
-.testimonials-columns {
-  display: flex;
-  justify-content: center;
-  gap: 1.25rem;
-}
-
-.testimonials-column {
-  flex: 0 0 320px;
+.testimonial-slide-card {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
-  animation: testimonialsScroll 24s linear infinite;
-}
-
-.testimonials-col-2 {
-  animation-duration: 28s;
-}
-
-.testimonials-col-3 {
-  animation-duration: 26s;
-}
-
-.testimonial-card {
-  border: 1px solid rgba(255, 255, 255, 0.11);
-  background: rgba(14, 10, 24, 0.78);
-  border-radius: 18px;
-  padding: 1.2rem 1.15rem;
-  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.24);
-}
-
-.testimonial-card p {
-  margin: 0;
-  color: #eee8ff;
-  line-height: 1.65;
-}
-
-.testimonial-author {
-  margin-top: 0.95rem;
-  display: flex;
   align-items: center;
-  gap: 0.6rem;
+  gap: 1.6rem;
+  padding: 2.5rem 2rem 2rem;
+  border: 1px solid rgba(136, 0, 204, 0.28);
+  background: linear-gradient(140deg, rgba(45, 14, 80, 0.80), rgba(22, 8, 44, 0.90));
+  border-radius: 20px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.35), 0 0 0 1px rgba(136, 0, 204, 0.12) inset;
+  text-align: center;
 }
 
-.testimonial-author img {
-  width: 40px;
-  height: 40px;
+.testimonial-slide-photo {
+  width: 96px;
+  height: 96px;
   border-radius: 50%;
   object-fit: cover;
-  border: 1px solid rgba(255, 255, 255, 0.18);
+  border: 3px solid rgba(136, 0, 204, 0.55);
+  box-shadow: 0 0 20px rgba(136, 0, 204, 0.30);
+  flex-shrink: 0;
 }
 
-.testimonial-author strong {
-  display: block;
-  font-size: 0.92rem;
+.testimonial-slide-quote {
+  margin: 0;
+  font-size: 1.08rem;
+  line-height: 1.75;
+  color: #ede6ff;
+  font-style: italic;
+  border: none;
+  padding: 0;
+  max-width: 56ch;
 }
 
-.testimonial-author span {
-  display: block;
-  font-size: 0.81rem;
-  color: var(--text-secondary);
+.testimonials-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-60%);
+  width: 44px;
+  height: 44px;
+  background: rgba(136, 0, 204, 0.22) !important;
+  border: 1px solid rgba(136, 0, 204, 0.45) !important;
+  border-radius: 50% !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 1 !important;
+  transition: background 0.2s ease;
 }
 
-@keyframes testimonialsScroll {
-  0% {
-    transform: translateY(0);
-  }
-  100% {
-    transform: translateY(-50%);
-  }
+.testimonials-arrow:hover {
+  background: rgba(136, 0, 204, 0.45) !important;
+}
+
+.testimonials-arrow.carousel-control-prev { left: -22px; }
+.testimonials-arrow.carousel-control-next { right: -22px; }
+
+.testimonials-arrow-icon {
+  font-size: 1.6rem;
+  color: #fff;
+  line-height: 1;
+}
+
+.testimonials-dots {
+  position: static !important;
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 1.5rem;
+}
+
+.testimonials-dots button {
+  width: 10px !important;
+  height: 10px !important;
+  border-radius: 50% !important;
+  background: rgba(136, 0, 204, 0.35) !important;
+  border: 1px solid rgba(136, 0, 204, 0.55) !important;
+  opacity: 1 !important;
+  padding: 0 !important;
+  flex: none !important;
+  transition: background 0.2s ease;
+}
+
+.testimonials-dots button.active {
+  background: #8800cc !important;
 }
 
 .feature-card {
@@ -1783,18 +1800,8 @@ button.subcategory-chip {
     padding-top: 82px !important;
   }
 
-  .testimonials-columns {
-    justify-content: stretch;
-  }
-
-  .testimonials-column {
-    flex-basis: 100%;
-  }
-
-  .testimonials-col-2,
-  .testimonials-col-3 {
-    display: none;
-  }
+  .testimonials-arrow.carousel-control-prev { left: -8px; }
+  .testimonials-arrow.carousel-control-next { right: -8px; }
 
   .brand-logo {
     height: 42px;
