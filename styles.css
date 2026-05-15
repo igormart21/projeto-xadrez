@@ -528,7 +528,8 @@ body {
   /* Mesma imagem da Home (collection-5) */
   background-image:
     linear-gradient(145deg, rgba(12, 9, 20, 0.2), rgba(12, 9, 20, 0.72)),
-    url("https://images.unsplash.com/photo-1611195974226-a6a9be9dd763?auto=format&fit=crop&w=1200&q=80");
+    url("https://images.unsplash.com/photo-1670234025697-84080c3fdb08?auto=format&fit=crop&w=1200&q=80");
+  filter: grayscale(100%);
 }
 
 .mesa-personalizada-image {
@@ -1246,7 +1247,8 @@ button.subcategory-chip {
 .collection-5 {
   background-image:
     linear-gradient(145deg, rgba(12, 9, 20, 0.2), rgba(12, 9, 20, 0.72)),
-    url("https://images.unsplash.com/photo-1611195974226-a6a9be9dd763?auto=format&fit=crop&w=1200&q=80");
+    url("https://images.unsplash.com/photo-1670234025697-84080c3fdb08?auto=format&fit=crop&w=1200&q=80");
+  filter: grayscale(100%);
 }
 
 .collection-6 {
