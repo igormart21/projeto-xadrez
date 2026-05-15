@@ -1368,7 +1368,7 @@ button.subcategory-chip {
 
 .testimonials-carousel .carousel-inner,
 .testimonials-carousel .carousel-item {
-  height: 420px;
+  height: auto;
 }
 
 .testimonial-slide-card {
@@ -1408,14 +1408,7 @@ button.subcategory-chip {
 }
 
 @media (max-width: 575.98px) {
-  .testimonials-carousel .carousel-inner,
-  .testimonials-carousel .carousel-item {
-    height: auto;
-    min-height: 0;
-  }
-
   .testimonial-slide-card {
-    height: auto;
     padding: 1.6rem 1.25rem;
     gap: 1rem;
     border-radius: 14px;

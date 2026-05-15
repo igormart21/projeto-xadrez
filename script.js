@@ -292,6 +292,34 @@ initHeroParticles();
   startAuto();
 })();
 
+function equalizeTestimonialHeights() {
+  const inner = document.querySelector('.testimonials-carousel .carousel-inner');
+  const items = Array.from(document.querySelectorAll('.testimonials-carousel .carousel-item'));
+  if (!inner || items.length === 0) return;
+
+  inner.style.height = '';
+  items.forEach(item => { item.style.height = ''; });
+
+  items.forEach(item => {
+    item.style.cssText += ';display:block!important;visibility:hidden!important;position:absolute!important;';
+  });
+
+  let maxH = 0;
+  items.forEach(item => { if (item.offsetHeight > maxH) maxH = item.offsetHeight; });
+
+  items.forEach(item => {
+    item.style.cssText = item.style.cssText
+      .replace(/display:[^;]+!important;/, '')
+      .replace(/visibility:[^;]+!important;/, '')
+      .replace(/position:[^;]+!important;/, '');
+    item.style.height = maxH + 'px';
+  });
+  inner.style.height = maxH + 'px';
+}
+
+equalizeTestimonialHeights();
+window.addEventListener('resize', equalizeTestimonialHeights);
+
 document.querySelectorAll(".wpp-link").forEach((link) => {
   link.addEventListener("click", () => {
     if (typeof gtag === "function") {
