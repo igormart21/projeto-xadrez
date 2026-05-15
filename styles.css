@@ -284,7 +284,7 @@ body {
   background: rgba(136, 0, 204, 0.12);
   padding: 0.45rem 0.9rem;
   font-size: 0.82rem;
-  color: #e7dcff;
+  color: #f0ccff;
   backdrop-filter: blur(6px);
 }
 
@@ -309,7 +309,7 @@ body {
   font-size: 0.78rem;
   text-transform: uppercase;
   letter-spacing: 0.15em;
-  color: #d4c8ff;
+  color: #e0aaff;
 }
 
 .hero-title {
@@ -1582,7 +1582,7 @@ button.subcategory-chip {
   align-items: center;
   gap: 2.5rem;
   background: linear-gradient(135deg, rgba(30, 18, 60, 0.7), rgba(18, 10, 36, 0.85));
-  border: 1px solid rgba(191, 128, 255, 0.18);
+  border: 1px solid rgba(136, 0, 204, 0.25);
   border-radius: 1.25rem;
   padding: 2.5rem 3rem;
   box-shadow: 0 8px 40px rgba(80, 0, 180, 0.12);
