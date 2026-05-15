@@ -1366,12 +1366,22 @@ button.subcategory-chip {
   padding-bottom: 3.5rem;
 }
 
+.testimonials-carousel .carousel-inner {
+  min-height: 360px;
+}
+
+.testimonials-carousel .carousel-item {
+  min-height: 360px;
+}
+
 .testimonial-slide-card {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   gap: 1.6rem;
-  padding: 2.5rem 2rem 2rem;
+  min-height: 360px;
+  padding: 2.5rem 3rem 2rem;
   border: 1px solid rgba(136, 0, 204, 0.28);
   background: linear-gradient(140deg, rgba(45, 14, 80, 0.80), rgba(22, 8, 44, 0.90));
   border-radius: 20px;
