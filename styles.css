@@ -510,18 +510,9 @@ body {
 
 .product-3 {
   /* Mesma imagem da Home (collection-4) */
-  background-image: none;
-}
-
-.product-3::before {
-  content: '';
-  position: absolute;
-  inset: 0;
   background-image:
     linear-gradient(145deg, rgba(12, 9, 20, 0.2), rgba(12, 9, 20, 0.72)),
     url("https://images.unsplash.com/photo-1764250244454-e063cef0f730?auto=format&fit=crop&w=1200&q=80");
-  background-size: cover;
-  background-position: center;
   filter: grayscale(100%);
 }
 
@@ -1246,12 +1237,14 @@ button.subcategory-chip {
 
 .collection-4 {
   background-image: none;
+  isolation: isolate;
 }
 
 .collection-4::before {
   content: '';
   position: absolute;
   inset: 0;
+  z-index: 0;
   background-image:
     linear-gradient(145deg, rgba(12, 9, 20, 0.2), rgba(12, 9, 20, 0.72)),
     url("https://images.unsplash.com/photo-1764250244454-e063cef0f730?auto=format&fit=crop&w=1200&q=80");
