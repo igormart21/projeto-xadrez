@@ -89,7 +89,7 @@ function initHeroParticles() {
       const y = Math.random() * (viewportHeight - size * 2) + size;
       const directionX = Math.random() * 0.5 - 0.25;
       const directionY = Math.random() * 0.5 - 0.25;
-      const color = "rgba(191, 128, 255, 1)";
+      const color = "rgba(170, 50, 215, 1)";
       particles.push(new Particle(x, y, directionX, directionY, size, color));
     }
   }
@@ -122,7 +122,7 @@ function initHeroParticles() {
 
         if (distance < (viewportWidth / 7.5) * (viewportHeight / 7.5)) {
           const opacityValue = 1 - distance / 15000;
-          ctx.strokeStyle = `rgba(200, 150, 255, ${opacityValue})`;
+          ctx.strokeStyle = `rgba(170, 50, 215, ${opacityValue})`;
           ctx.lineWidth = 1.2;
           ctx.beginPath();
           ctx.moveTo(particles[a].x, particles[a].y);

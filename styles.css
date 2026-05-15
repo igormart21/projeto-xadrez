@@ -5,8 +5,8 @@
   --border-soft: rgba(255, 255, 255, 0.12);
   --text-primary: #f2eefc;
   --text-secondary: #b7b0cb;
-  --accent-purple: #6c3cf3;
-  --accent-purple-2: #2a1a54;
+  --accent-purple: #8800cc;
+  --accent-purple-2: #23003f;
   --accent-orange: #ff8c2b;
 }
 
@@ -153,7 +153,7 @@ body {
 /* Slogan oficial — barra sob o menu e rodapé */
 .site-slogan-bar-wrap {
   text-align: center;
-  background: linear-gradient(90deg, transparent, rgba(124, 92, 252, 0.12), transparent);
+  background: linear-gradient(90deg, transparent, rgba(136, 0, 204, 0.12), transparent);
   border-bottom: 1px solid rgba(255, 255, 255, 0.06);
   padding: 0.32rem 1rem 0.4rem;
 }
@@ -250,7 +250,7 @@ body {
   z-index: 0;
   background-image:
     linear-gradient(115deg, rgba(6, 4, 12, 0.88) 12%, rgba(12, 7, 24, 0.72) 44%, rgba(5, 3, 11, 0.84) 88%),
-    linear-gradient(180deg, rgba(124, 92, 252, 0.14), rgba(5, 3, 11, 0.4)),
+    linear-gradient(180deg, rgba(136, 0, 204, 0.14), rgba(5, 3, 11, 0.4)),
     url("https://images.unsplash.com/photo-1528819622765-d6bcf132f793?auto=format&fit=crop&w=2000&q=80");
   background-size: cover;
   background-position: center center;
@@ -280,8 +280,8 @@ body {
   align-items: center;
   gap: 0.45rem;
   border-radius: 999px;
-  border: 1px solid rgba(124, 92, 252, 0.35);
-  background: rgba(124, 92, 252, 0.12);
+  border: 1px solid rgba(136, 0, 204, 0.35);
+  background: rgba(136, 0, 204, 0.12);
   padding: 0.45rem 0.9rem;
   font-size: 0.82rem;
   color: #e7dcff;
@@ -332,7 +332,7 @@ body {
 }
 
 .btn-primary-custom {
-  background: linear-gradient(135deg, #ff8c2b 0%, #b168fd 55%, #6c3cf3 100%);
+  background: linear-gradient(135deg, #ff8c2b 0%, #bb44ee 55%, #8800cc 100%);
   border: none;
   color: #fff;
   padding: 0.85rem 1.2rem;
@@ -442,7 +442,7 @@ body {
   width: 94px;
   height: 3px;
   border-radius: 999px;
-  background: linear-gradient(90deg, rgba(255, 140, 43, 0.95), rgba(124, 92, 252, 0.85));
+  background: linear-gradient(90deg, rgba(255, 140, 43, 0.95), rgba(136, 0, 204, 0.85));
 }
 
 .section-kicker {
@@ -876,7 +876,7 @@ body {
   border-radius: 999px;
   border: 1px solid rgba(255, 255, 255, 0.14);
   color: #efe7ff;
-  background: rgba(124, 92, 252, 0.12);
+  background: rgba(136, 0, 204, 0.12);
   font-size: 0.82rem;
   font-weight: 500;
   text-decoration: none;
