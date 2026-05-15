@@ -192,6 +192,139 @@ function initHeroParticles() {
 
 initHeroParticles();
 
+// ── Hero chess board animation ────────────────────────────────
+(function initHeroChessBoard() {
+  const canvas = document.getElementById('hero-chess-canvas');
+  if (!canvas) return;
+  const ctx = canvas.getContext('2d');
+
+  function resize() {
+    const size = window.innerWidth < 992 ? 260 : 360;
+    canvas.width = size;
+    canvas.height = size;
+    canvas.style.width = size + 'px';
+    canvas.style.height = size + 'px';
+  }
+  resize();
+  window.addEventListener('resize', resize);
+
+  const LIGHT = '#d4a96a';
+  const DARK  = '#7c4f2a';
+
+  const UNI = {
+    K:'♔',Q:'♕',R:'♖',B:'♗',N:'♘',P:'♙',
+    k:'♚',q:'♛',r:'♜',b:'♝',n:'♞',p:'♟',
+  };
+
+  const START = [
+    ['r','n','b','q','k','b','n','r'],
+    ['p','p','p','p','p','p','p','p'],
+    ['','','','','','','',''],
+    ['','','','','','','',''],
+    ['','','','','','','',''],
+    ['','','','','','','',''],
+    ['P','P','P','P','P','P','P','P'],
+    ['R','N','B','Q','K','B','N','R'],
+  ];
+
+  // Classic Ruy Lopez opening
+  const MOVES = [
+    [6,4, 4,4], // e4
+    [1,4, 3,4], // e5
+    [7,6, 5,5], // Nf3
+    [0,1, 2,2], // Nc6
+    [7,5, 4,2], // Bc4
+    [0,5, 3,2], // Bc5
+    [6,3, 5,3], // d3
+    [1,3, 2,3], // d6
+    [7,1, 5,2], // Nc3
+    [0,6, 2,5], // Nf6
+    [6,2, 5,2], // c3
+    [1,0, 3,0], // a5
+  ];
+
+  let board = START.map(r => [...r]);
+  let moveIdx = 0;
+  let animStart = null;
+  let pauseEnd  = 0;
+  const ANIM_MS  = 900;
+  const PAUSE_MS = 1600;
+
+  function draw(fromSq, toSq, t) {
+    const S = canvas.width;
+    const C = S / 8;
+    ctx.clearRect(0, 0, S, S);
+
+    for (let r = 0; r < 8; r++) {
+      for (let c = 0; c < 8; c++) {
+        // Base square
+        ctx.fillStyle = (r + c) % 2 === 0 ? LIGHT : DARK;
+        ctx.fillRect(c*C, r*C, C, C);
+
+        // From highlight (fades out)
+        if (fromSq && fromSq[0]===r && fromSq[1]===c) {
+          const a = t < 0.5 ? 0.7 : 0.7 * (1 - (t - 0.5) / 0.5);
+          ctx.fillStyle = `rgba(255,140,43,${a})`;
+          ctx.fillRect(c*C, r*C, C, C);
+        }
+        // To highlight (fades in after midpoint)
+        if (toSq && toSq[0]===r && toSq[1]===c && t > 0.45) {
+          const a = ((t - 0.45) / 0.55) * 0.65;
+          ctx.fillStyle = `rgba(255,210,80,${a})`;
+          ctx.fillRect(c*C, r*C, C, C);
+        }
+
+        // Piece
+        const p = board[r][c];
+        if (p && UNI[p]) {
+          const isBlack = p === p.toLowerCase();
+          ctx.font = `bold ${Math.round(C * 0.66)}px serif`;
+          ctx.textAlign = 'center';
+          ctx.textBaseline = 'middle';
+          ctx.fillStyle = isBlack ? '#1e0900' : '#fdf0dc';
+          ctx.strokeStyle = isBlack ? 'rgba(255,200,100,0.25)' : 'rgba(0,0,0,0.25)';
+          ctx.lineWidth = 0.8;
+          ctx.strokeText(UNI[p], c*C + C/2, r*C + C/2 + 1);
+          ctx.fillText(UNI[p], c*C + C/2, r*C + C/2 + 1);
+        }
+      }
+    }
+
+    // Border
+    ctx.strokeStyle = 'rgba(255,140,43,0.35)';
+    ctx.lineWidth = 1.5;
+    ctx.strokeRect(0.75, 0.75, S - 1.5, S - 1.5);
+  }
+
+  function animate(ts) {
+    requestAnimationFrame(animate);
+
+    if (ts < pauseEnd) {
+      draw(null, null, 0);
+      return;
+    }
+
+    if (!animStart) animStart = ts;
+    const t = Math.min((ts - animStart) / ANIM_MS, 1);
+    const mv = MOVES[moveIdx];
+    draw([mv[0], mv[1]], [mv[2], mv[3]], t);
+
+    if (t >= 1) {
+      board[mv[2]][mv[3]] = board[mv[0]][mv[1]];
+      board[mv[0]][mv[1]] = '';
+      moveIdx++;
+      if (moveIdx >= MOVES.length) {
+        moveIdx = 0;
+        board = START.map(r => [...r]);
+      }
+      animStart = null;
+      pauseEnd = ts + PAUSE_MS;
+    }
+  }
+
+  requestAnimationFrame(animate);
+})();
+
 // ── Product gallery: autoplay + lightbox ──────────────────────
 (function initProductGallery() {
   const mainImage = document.getElementById('product-main-image');
