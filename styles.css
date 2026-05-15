@@ -1366,10 +1366,7 @@ button.subcategory-chip {
   padding-bottom: 3.5rem;
 }
 
-.testimonials-carousel .carousel-inner {
-  height: 420px;
-}
-
+.testimonials-carousel .carousel-inner,
 .testimonials-carousel .carousel-item {
   height: 420px;
 }
@@ -1408,6 +1405,43 @@ button.subcategory-chip {
   border: none;
   padding: 0;
   max-width: 56ch;
+}
+
+@media (max-width: 575.98px) {
+  .testimonials-carousel .carousel-inner,
+  .testimonials-carousel .carousel-item {
+    height: auto;
+    min-height: 0;
+  }
+
+  .testimonial-slide-card {
+    height: auto;
+    padding: 1.6rem 1.25rem;
+    gap: 1rem;
+    border-radius: 14px;
+  }
+
+  .testimonial-slide-photo {
+    width: 72px;
+    height: 72px;
+  }
+
+  .testimonial-slide-quote {
+    font-size: 0.93rem;
+    line-height: 1.65;
+  }
+
+  .testimonials-arrow.carousel-control-prev { left: -4px; }
+  .testimonials-arrow.carousel-control-next { right: -4px; }
+
+  .testimonials-arrow {
+    width: 36px;
+    height: 36px;
+  }
+
+  .testimonials-arrow-icon {
+    font-size: 1.3rem;
+  }
 }
 
 .testimonials-arrow {
